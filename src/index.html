@@ -15,16 +15,28 @@
         <div class="score-container">
           <h3>USER</h3>
           <div class="score-box">
-            <p>0 : 0</p>
+            <p class="player-score" >0</p>
+            <p>:</p>
+            <p class="ai-score" >0</p>
           </div>
           <h3>AI</h3>
         </div>
         <div class="selection-container">
           <h2>MAKE YOUR MOVE</h2>
           <div class="buttons-container">
-            <button class="rock"><img src=<%=require("./img/rock.png")%> alt=""></button>
-            <button class="paper"><img src=<%=require("./img/paper.png")%> alt=""></button>
-            <button class="scissors"><img src=<%=require("./img/scissors1.png")%> alt=""></button>
+            <button class="select-button rock">✊</button>
+            <button class="select-button paper">✋</button>
+            <button class="select-button scissors">✌️</button>
+          </div>
+        </div>
+        <div class="info-container">
+          <div class="selection player-selection-container">
+            <p>you have selected</p>
+            <p class="selection-display player-selection-display"></p>
+          </div>
+          <div class="selection ai-selection-container">
+            <p>the AI has selected</p>
+            <p class="selection-display ai-selection-display"></p>
           </div>
         </div>
       </div>
